@@ -1,0 +1,45 @@
+POST http://127.0.0.1:8080/v1/api/tasks
+Content-Type: application/json
+
+{
+  "type": "TASK",
+  "summary": "Smith",
+  "description": "jane.smith@company.com",
+  "status": "OPEN"
+}
+
+###
+
+POST http://127.0.0.1:8080/v1/api/tasks
+Content-Type: application/json
+
+{
+  "type": "TASKQ",
+  "summary": "Smith",
+  "description": "jane.smith@company.com",
+  "status": "statusstatus"
+}
+
+
+###
+PUT http://127.0.0.1:8080/v1/api/tasks/6303be50-616e-4acc-bcc7-5df769664794
+Content-Type: application/json
+
+{
+  "type": "BUG",
+  "summary": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+  "status": "OPEN"
+}
+
+###
+GET http://127.0.0.1:8080/v1/api/tasks
+Accept: application/json
+
+###
+GET http://127.0.0.1:8080/v1/api/tasks/6303be50-616e-4acc-bcc7-5df769664792
+
+###
+DELETE http://127.0.0.1:8080/v1/api/tasks/93bd8b80-ed4e-4130-9aff-f3cd397586bb
+
+
